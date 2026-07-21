@@ -44,5 +44,8 @@ jobs:
                  index.html habría que tocar (usa lo que sabes de la arquitectura).
                - **Enfoque de solución**: pasos sugeridos, sin escribir el código completo.
                Encabeza el comentario con "🤖 Triage automático".
+               El comentario debe estar en formato Markdown válido que GitHub pueda
+               renderizar correctamente (encabezados con **negrita**, listas con "-",
+               bloques de código con backticks cuando corresponda, etc.).
 
             No modifiques el cuerpo del issue ni archivos del repo. Solo labels y el comentario.
