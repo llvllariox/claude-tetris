@@ -252,3 +252,100 @@ kbd {
 #restart-btn:hover {
   background: var(--btn-hover);
 }
+
+/* ---- Records ---- */
+.records-section {
+  gap: 8px;
+}
+
+.records-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 12px;
+}
+
+.records-table td {
+  padding: 3px 4px;
+  color: var(--text);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.records-table td:first-child {
+  color: var(--label-color);
+  width: 16px;
+}
+
+.records-table td:last-child {
+  text-align: right;
+}
+
+.records-table tr.record-highlight td {
+  color: var(--value-color);
+  font-weight: 700;
+}
+
+.records-empty {
+  font-size: 12px;
+  color: var(--control-text);
+}
+
+.reset-records-btn {
+  align-self: flex-start;
+  background: transparent;
+  color: var(--control-text);
+  border: 1px solid var(--kbd-border);
+  border-radius: 4px;
+  padding: 4px 10px;
+  font-size: 11px;
+  cursor: pointer;
+  transition: color 0.15s, border-color 0.15s;
+}
+
+.reset-records-btn:hover {
+  color: var(--overlay-title);
+  border-color: var(--overlay-title);
+}
+
+.name-form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+}
+
+.name-form.hidden {
+  display: none;
+}
+
+.name-form label {
+  font-size: 12px;
+  color: var(--overlay-score);
+}
+
+.name-form input {
+  background: var(--kbd-bg);
+  border: 1px solid var(--kbd-border);
+  border-radius: 4px;
+  color: var(--text);
+  padding: 6px 10px;
+  font-size: 13px;
+  text-align: center;
+}
+
+.name-form button {
+  background: var(--btn-bg);
+  color: var(--btn-text);
+  border: none;
+  border-radius: 6px;
+  padding: 6px 20px;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+#overlay-records .records-table {
+  min-width: 200px;
+}
