@@ -119,6 +119,17 @@ body {
   transform: translateX(20px);
 }
 
+.skin-select {
+  background: var(--kbd-bg);
+  border: 1px solid var(--kbd-border);
+  color: var(--kbd-text);
+  border-radius: 6px;
+  padding: 4px 8px;
+  font-size: 12px;
+  font-family: inherit;
+  cursor: pointer;
+}
+
 .game-container {
   display: flex;
   gap: 20px;
@@ -170,6 +181,14 @@ body {
   background: var(--board-bg);
   border-radius: 4px;
   transition: background 0.2s, border-color 0.2s;
+}
+
+/* Skin Neón: fondo negro puro fijo, independiente del tema claro/oscuro */
+body.skin-neon #board,
+body.skin-neon #next-canvas {
+  background: #000;
+  border-color: #003b38;
+  box-shadow: 0 0 30px rgba(0, 255, 242, 0.15);
 }
 
 /* ---- Controles ---- */
